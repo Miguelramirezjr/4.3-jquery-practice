@@ -1,0 +1,64 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+$primary-color: #08335A;
+$secondary-color: #58AED8;
+$third-color: #0D72A3;
+$fourth-color: #FFFFFF;
+
+
+body {
+    background: white;
+    font-family: 'Lato', 'sans-serif';
+}
+
+#accordian {
+    background: $primary-color;
+    width: 350px;
+    margin: 100px auto 0 auto;
+    color: $fourth-color;
+    border-radius: 5px;
+}
+
+#accordian h3 {
+    font-size: 17px;
+    line-height: 34px;
+    padding: 0 10px;
+    cursor: pointer;
+    background: linear-gradient($third-color, $secondary-color);
+    border-radius: 3px;
+}
+
+#accordian h3:hover {
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+}
+
+#accordian h3 i {
+    font-size: 16px;
+    margin-right: 10px;
+    color: $fourth-color;
+}
+
+#accordian li {
+    list-style-type: none;
+}
+
+#accordian ul ul li a {
+    color: $fourth-color;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 27px;
+    display: block;
+    padding: 0 15px;
+    transition: all 0.15s;
+}
+
+#accordian ul ul li a:hover {
+    background: $secondary-color;
+    border-left: 10px solid $fourth-color;
+    color: $primary-color;
+}
+
+#accordian ul ul {
+    display: none;
+}
